@@ -54,7 +54,7 @@ export function ProductDetail({ product }: { product: Product }) {
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-8 lg:grid-cols-[0.68fr_0.32fr]">
           <div className="space-y-6">
-            <DetailList title="Features" items={product.features} />
+            {product.features ? <DetailList title="Features" items={product.features} /> : null}
             {product.specifications?.map((table) => <SpecTable key={table.title} table={table} />)}
           </div>
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
