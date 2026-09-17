@@ -15,6 +15,8 @@ export const Route = createFileRoute("/about")({
           "Learn about LEBCO, a hardware business offering products for modular kitchens, furniture and utility applications.",
       },
       { property: "og:title", content: "About Us — LEBCO" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:description",
         content: "LEBCO provides practical hardware solutions for kitchens, furniture and everyday utility applications.",

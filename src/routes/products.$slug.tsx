@@ -3,7 +3,7 @@ import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ProductDetail } from "@/components/site/ProductDetail";
 import { getProduct } from "@/data/products";
 
-export const Route = createFileRoute("/products/")({
+export const Route = createFileRoute("/products/$slug")({
   loader: ({ params }) => {
     const product = getProduct(params.slug);
     if (!product) throw notFound();
@@ -21,6 +21,8 @@ export const Route = createFileRoute("/products/")({
         { title },
         { name: "description", content: description },
         { property: "og:title", content: title },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
         { property: "og:description", content: description },
       ],
     };

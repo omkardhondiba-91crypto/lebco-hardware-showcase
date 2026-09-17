@@ -14,6 +14,8 @@ export const Route = createFileRoute("/products")({
           "Browse LEBCO product range including Thali Stand, PVC Cutlery, Pullout, Pantry, Anti Slip Matt, Magic Corner, Wicker Basket, Bed Fitting and Table Bracket.",
       },
       { property: "og:title", content: "Products — LEBCO Hardware Catalogue" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:description",
         content: "Browse LEBCO's practical hardware product range for kitchens, furniture and utility applications.",

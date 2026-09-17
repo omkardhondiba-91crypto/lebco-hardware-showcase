@@ -16,6 +16,8 @@ export const Route = createFileRoute("/contact")({
           "Contact LEBCO for hardware product enquiries by phone, WhatsApp or email. View business hours and Bhiwandi address.",
       },
       { property: "og:title", content: "Contact LEBCO — Phone, WhatsApp, Email and Address" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:description",
         content: "Contact LEBCO for hardware product enquiries by WhatsApp, phone or email.",

@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Boxes, CheckCircle, MessageCircle, ShieldCheck, Wrench } from "lucide-react";
 
 import { ProductGrid } from "@/components/site/ProductGrid";
@@ -16,6 +16,8 @@ export const Route = createFileRoute("/")({
           "Explore LEBCO hardware products for modular kitchens, furniture and utility applications. Enquire by WhatsApp, phone or email.",
       },
       { property: "og:title", content: "LEBCO — Hardware Products for Kitchens, Furniture and Utility Use" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:description",
         content:
@@ -25,8 +27,6 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
-
-import { createFileRoute } from "@tanstack/react-router";
 
 function Index() {
   return (
